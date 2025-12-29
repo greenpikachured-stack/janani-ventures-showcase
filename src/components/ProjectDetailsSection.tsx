@@ -131,23 +131,23 @@ const ProjectDetailsSection = () => {
         return (
           <div className="py-12">
             <div className="max-w-4xl mx-auto">
-              <h3 className="text-3xl font-serif text-primary-foreground mb-8 text-center underline underline-offset-8 decoration-accent">
+              <h3 className="text-3xl font-serif text-foreground mb-8 text-center underline underline-offset-8 decoration-primary">
                 Location Highlights
               </h3>
               <div className="flex flex-col md:flex-row items-center gap-12">
                 <div className="flex-1 flex justify-center">
                   <div className="text-center">
                     <div className="text-6xl mb-4">🌳</div>
-                    <h4 className="text-2xl font-serif text-accent">JANANI'S</h4>
-                    <h3 className="text-3xl font-serif text-accent">BANYAN SPRINGS</h3>
-                    <p className="text-accent italic">Beyond Homes</p>
+                    <h4 className="text-2xl font-serif text-primary">JANANI'S</h4>
+                    <h3 className="text-3xl font-serif text-primary">BANYAN SPRINGS</h3>
+                    <p className="text-primary italic">Beyond Homes</p>
                   </div>
                 </div>
                 <div className="flex-1">
                   <ul className="space-y-3">
                     {locationHighlights.map((item, index) => (
-                      <li key={index} className="flex items-start gap-2 text-primary-foreground">
-                        <span className="text-accent">•</span>
+                      <li key={index} className="flex items-start gap-2 text-foreground">
+                        <span className="text-primary">•</span>
                         <span>{item}</span>
                       </li>
                     ))}
@@ -161,26 +161,26 @@ const ProjectDetailsSection = () => {
       case "specifications":
         return (
           <div className="py-12">
-            <h3 className="text-3xl font-serif text-primary-foreground mb-8 text-center">
+            <h3 className="text-3xl font-serif text-foreground mb-8 text-center">
               Specifications
             </h3>
             <div className="max-w-5xl mx-auto">
-              <div className="border border-primary/30 rounded-lg overflow-hidden">
+              <div className="border border-border rounded-lg overflow-hidden">
                 {specifications.map((spec, index) => (
                   <div
                     key={index}
                     className={`flex flex-col md:flex-row ${
-                      index !== specifications.length - 1 ? "border-b border-primary/30" : ""
+                      index !== specifications.length - 1 ? "border-b border-border" : ""
                     }`}
                   >
-                    <div className="md:w-1/4 bg-primary/20 p-4 font-semibold text-primary-foreground uppercase text-sm tracking-wide">
+                    <div className="md:w-1/4 bg-muted p-4 font-semibold text-foreground uppercase text-sm tracking-wide">
                       {spec.category}
                     </div>
-                    <div className="md:w-3/4 p-4 bg-primary/10">
+                    <div className="md:w-3/4 p-4 bg-background">
                       <ul className="space-y-2">
                         {spec.items.map((item, itemIndex) => (
-                          <li key={itemIndex} className="flex items-start gap-2 text-primary-foreground/90">
-                            <span className="text-accent mt-1">•</span>
+                          <li key={itemIndex} className="flex items-start gap-2 text-foreground/80">
+                            <span className="text-primary mt-1">•</span>
                             <span>{item}</span>
                           </li>
                         ))}
@@ -198,63 +198,63 @@ const ProjectDetailsSection = () => {
           <div className="py-12">
             <div className="max-w-6xl mx-auto">
               <div className="mb-12">
-                <h3 className="text-2xl font-serif text-accent mb-4">East Facing 200 Sq.yds Floor Plan</h3>
-                <div className="text-primary-foreground/80 space-y-1 text-sm mb-6">
+                <h3 className="text-2xl font-serif text-primary mb-4">East Facing 200 Sq.yds Floor Plan</h3>
+                <div className="text-foreground/70 space-y-1 text-sm mb-6">
                   <p>NO. OF FLOORS: G+2</p>
-                  <p className="text-accent">GROUND FLOOR AREA: 1,214.43 SFT</p>
-                  <p className="text-accent">FIRST FLOOR AREA: 1,214.43 SFT</p>
-                  <p className="text-accent">SECOND FLOOR AREA: 937.12 SFT</p>
-                  <p className="text-accent">TOTAL BUILT UP AREA: 3,365.98 SFT</p>
+                  <p className="text-primary">GROUND FLOOR AREA: 1,214.43 SFT</p>
+                  <p className="text-primary">FIRST FLOOR AREA: 1,214.43 SFT</p>
+                  <p className="text-primary">SECOND FLOOR AREA: 937.12 SFT</p>
+                  <p className="text-primary">TOTAL BUILT UP AREA: 3,365.98 SFT</p>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                  <div className="bg-background p-4 rounded border-2 border-primary/30">
+                  <div className="bg-background p-4 rounded border border-border">
                     <div className="aspect-square bg-muted flex items-center justify-center text-muted-foreground">
                       <p className="text-center p-4">Ground Floor Plan<br/><span className="text-xs">(Floor plan image to be added)</span></p>
                     </div>
-                    <p className="text-center mt-2 text-primary-foreground font-medium">GROUND FLOOR PLAN</p>
+                    <p className="text-center mt-2 text-foreground font-medium">GROUND FLOOR PLAN</p>
                   </div>
-                  <div className="bg-background p-4 rounded border-2 border-primary/30">
+                  <div className="bg-background p-4 rounded border border-border">
                     <div className="aspect-square bg-muted flex items-center justify-center text-muted-foreground">
                       <p className="text-center p-4">First Floor Plan<br/><span className="text-xs">(Floor plan image to be added)</span></p>
                     </div>
-                    <p className="text-center mt-2 text-primary-foreground font-medium">FIRST FLOOR PLAN</p>
+                    <p className="text-center mt-2 text-foreground font-medium">FIRST FLOOR PLAN</p>
                   </div>
-                  <div className="bg-background p-4 rounded border-2 border-primary/30">
+                  <div className="bg-background p-4 rounded border border-border">
                     <div className="aspect-square bg-muted flex items-center justify-center text-muted-foreground">
                       <p className="text-center p-4">Second Floor Plan<br/><span className="text-xs">(Floor plan image to be added)</span></p>
                     </div>
-                    <p className="text-center mt-2 text-primary-foreground font-medium">SECOND FLOOR PLAN</p>
+                    <p className="text-center mt-2 text-foreground font-medium">SECOND FLOOR PLAN</p>
                   </div>
                 </div>
               </div>
 
               <div>
-                <h3 className="text-2xl font-serif text-accent mb-4">West Facing 200 Sq.yds Floor Plan</h3>
-                <div className="text-primary-foreground/80 space-y-1 text-sm mb-6">
+                <h3 className="text-2xl font-serif text-primary mb-4">West Facing 200 Sq.yds Floor Plan</h3>
+                <div className="text-foreground/70 space-y-1 text-sm mb-6">
                   <p>NO. OF FLOORS: G+2</p>
-                  <p className="text-accent">GROUND FLOOR AREA: 1,187.75 SFT</p>
-                  <p className="text-accent">FIRST FLOOR AREA: 1,187.75 SFT</p>
-                  <p className="text-accent">SECOND FLOOR AREA: 900.00 SFT</p>
-                  <p className="text-accent">TOTAL BUILT UP AREA: 3,275.50 SFT</p>
+                  <p className="text-primary">GROUND FLOOR AREA: 1,187.75 SFT</p>
+                  <p className="text-primary">FIRST FLOOR AREA: 1,187.75 SFT</p>
+                  <p className="text-primary">SECOND FLOOR AREA: 900.00 SFT</p>
+                  <p className="text-primary">TOTAL BUILT UP AREA: 3,275.50 SFT</p>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                  <div className="bg-background p-4 rounded border-2 border-primary/30">
+                  <div className="bg-background p-4 rounded border border-border">
                     <div className="aspect-square bg-muted flex items-center justify-center text-muted-foreground">
                       <p className="text-center p-4">Ground Floor Plan<br/><span className="text-xs">(Floor plan image to be added)</span></p>
                     </div>
-                    <p className="text-center mt-2 text-primary-foreground font-medium">GROUND FLOOR PLAN</p>
+                    <p className="text-center mt-2 text-foreground font-medium">GROUND FLOOR PLAN</p>
                   </div>
-                  <div className="bg-background p-4 rounded border-2 border-primary/30">
+                  <div className="bg-background p-4 rounded border border-border">
                     <div className="aspect-square bg-muted flex items-center justify-center text-muted-foreground">
                       <p className="text-center p-4">First Floor Plan<br/><span className="text-xs">(Floor plan image to be added)</span></p>
                     </div>
-                    <p className="text-center mt-2 text-primary-foreground font-medium">FIRST FLOOR PLAN</p>
+                    <p className="text-center mt-2 text-foreground font-medium">FIRST FLOOR PLAN</p>
                   </div>
-                  <div className="bg-background p-4 rounded border-2 border-primary/30">
+                  <div className="bg-background p-4 rounded border border-border">
                     <div className="aspect-square bg-muted flex items-center justify-center text-muted-foreground">
                       <p className="text-center p-4">Second Floor Plan<br/><span className="text-xs">(Floor plan image to be added)</span></p>
                     </div>
-                    <p className="text-center mt-2 text-primary-foreground font-medium">SECOND FLOOR PLAN</p>
+                    <p className="text-center mt-2 text-foreground font-medium">SECOND FLOOR PLAN</p>
                   </div>
                 </div>
               </div>
@@ -266,22 +266,22 @@ const ProjectDetailsSection = () => {
         return (
           <div className="py-12">
             <div className="max-w-5xl mx-auto">
-              <h3 className="text-3xl font-serif text-primary-foreground mb-8 text-center underline underline-offset-8 decoration-accent">
+              <h3 className="text-3xl font-serif text-foreground mb-8 text-center underline underline-offset-8 decoration-primary">
                 Master Plan
               </h3>
               <div className="flex flex-col md:flex-row items-center gap-12">
                 <div className="flex-1">
-                  <p className="text-primary-foreground/90 text-lg leading-relaxed mb-6">
+                  <p className="text-foreground/80 text-lg leading-relaxed mb-6">
                     Where homes grow like the Banyan Tree, strong rooted and full of life. Inspired by the timeless
                     Banyan, the community offers more than just homes. It offers connection, peace and a sense of
                     belonging.
                   </p>
-                  <p className="text-primary-foreground/80 italic text-lg">
+                  <p className="text-foreground/70 italic text-lg">
                     "Live beyond walls. Live beyond homes." Welcome to a life in harmony with nature.
                   </p>
                 </div>
                 <div className="flex-1">
-                  <div className="bg-background p-4 rounded-lg border-2 border-primary/30">
+                  <div className="bg-background p-4 rounded-lg border border-border">
                     <div className="aspect-video bg-muted flex items-center justify-center text-muted-foreground">
                       <p className="text-center p-4">Master Plan Layout<br/><span className="text-xs">(Master plan image to be added)</span></p>
                     </div>
@@ -295,11 +295,11 @@ const ProjectDetailsSection = () => {
       case "location-map":
         return (
           <div className="py-12">
-            <h3 className="text-3xl font-serif text-primary-foreground mb-8 text-center">
+            <h3 className="text-3xl font-serif text-foreground mb-8 text-center">
               Location Map
             </h3>
             <div className="max-w-5xl mx-auto">
-              <div className="bg-background p-4 rounded-lg border-2 border-primary/30">
+              <div className="bg-background p-4 rounded-lg border border-border">
                 <div className="aspect-video bg-muted flex items-center justify-center text-muted-foreground">
                   <p className="text-center p-4">Location Map<br/><span className="text-xs">(Location map image to be added)</span></p>
                 </div>
@@ -315,23 +315,23 @@ const ProjectDetailsSection = () => {
   };
 
   return (
-    <section className="bg-primary">
+    <section className="bg-background py-8">
       <div className="container mx-auto px-4">
         {/* Tab Navigation */}
-        <nav className="flex flex-wrap justify-center gap-2 md:gap-8 py-4 border-b border-primary/30">
+        <nav className="flex flex-wrap justify-center gap-2 md:gap-8 py-4 border-b border-border">
           {tabs.map((tab) => (
             <button
               key={tab.id}
               onClick={() => setActiveTab(tab.id)}
               className={`px-4 py-2 text-sm md:text-base font-medium transition-all relative ${
                 activeTab === tab.id
-                  ? "text-accent"
-                  : "text-primary-foreground/70 hover:text-primary-foreground"
+                  ? "text-primary"
+                  : "text-foreground/60 hover:text-foreground"
               }`}
             >
               {tab.label}
               {activeTab === tab.id && (
-                <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-accent"></span>
+                <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-primary"></span>
               )}
             </button>
           ))}
